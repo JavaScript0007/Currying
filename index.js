@@ -31,3 +31,24 @@ console.log(volume(70)(203, 142))
 const hCy = volume(70)
 
 console.log(hCy(203, 142))
+
+
+// example 3
+
+const multiply = (x) => {
+  return (y) => {
+    return (z) => {
+      return  x * y * z 
+    } 
+  }
+}
+
+console.log(multiply(2)(3)(4))
+
+const mult1 = multiply(2)
+const mult2 = mult1(3)
+const mult3 = mult2(4)
+
+// save as console above console.log(multiply(2)(3)(4))
+console.log(mult3)
+
